@@ -3,10 +3,11 @@
 @import 'venders/variables';
 
 
-// body{
-// }
+main{
+  overflow: hidden;
+}
 
-.content-width{
+.content-width ,.container{
   width:  90%;
   margin: 0 auto;
   max-width: $contentMaxWidth;
@@ -222,4 +223,223 @@ header {
       }
     }
   }
+
+  .howto-catch {
+    font-size: 25px;
+    line-height: 40px;
+    padding-bottom: 50px;
+
+    & > span {
+      font-size: 30px;
+      text-decoration: underline #14C5D2 4px;
+    }
+  }
+
+  .howto-button {
+    margin-bottom: 100px;
+  }
+
+  .howto-info {
+    padding-bottom: 100px;
+  }
 }
+
+.company {
+  background-color: #E5E5E5;
+  text-align: center;
+  padding: 100px 0;
+
+  .company-top {
+    padding-bottom: 80px;
+  }
+
+  .company-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .company-list {
+    width: 80%;
+    margin: 80px auto;
+    gap: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    & .company-item {
+      width: 15%;
+      margin: auto;
+      padding-bottom: 10px;
+
+      & > img {
+        width: 90%;
+      }
+    }
+  }
+
+  .company-main {
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+
+  .company-about {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    .company-work {
+      background-color: $cWhite;
+      width: 30%;
+      height: 390px;
+      margin: auto;
+      text-align: start;
+      box-shadow: 0px 5px 5px 0px #747474;
+
+      .company-servise {
+
+        & > img {
+          width: 100%;
+        }
+
+        .company-text {
+          text-align: start;
+          padding: 10px;
+        }
+      }
+
+      .company-data {
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 15px;
+
+        & > dt {
+          width: 30%;
+          padding-bottom: 4px;
+
+          & > img {
+            width: 11px;
+          }
+        }
+
+        & > dd {
+          width: 65%;
+          padding-bottom: 4px;
+        }
+      }
+
+      .company-emphasis {
+        padding: 10px;
+      }
+
+      .company-detail {
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .company-button {
+        margin: 10px 13px;
+        padding: 10px 50px;
+        background-color: $cWhite;
+        border: solid #27324B 1px;
+        border-radius: 5px;
+        outline: none;
+      }
+    }
+  }
+
+  .company-index {
+    margin: 30px auto;
+    font-size: 14px;
+    color: #3A4660;
+  }
+}
+
+.flow {
+  background-color: #ECF1F2;
+  text-align: center;
+  margin: auto;
+  padding: 100px 0;
+
+  .flow-title {
+    color: #304566;
+  }
+
+  .flow-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    .flow-item {
+      background-color: $cWhite;
+      margin-top: 30px;
+      padding: 10px;
+      width: 12.5vw;
+      height: 200px;
+      border-radius: 8px;
+
+      .flow-step {
+        background-color: #304566;
+        color: $cWhite;
+        width: 7vw;
+        margin: auto;
+        padding: 4px 0;
+        border-radius: 10px;
+        font-size: 12px;
+        }
+
+      .flow-main {
+        color: #304566;
+        padding: 20px 0 25px 0;
+        font-size: 14px;
+      }
+
+      .flow-text {
+        color: #52637F;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 1.2rem;
+        text-align: start;
+      }
+    }
+  }
+}
+
+.contact {
+  background-color: #F5F5F5;
+  text-align: center;
+
+  .contact-title {
+    padding: 100px 0 60px 0;
+    font-weight: 100;
+    color: #27324B;
+    font-size: 18px;
+  }
+
+  .contact-top {
+    font-size: 45px;
+  }
+
+  .contact-chat {
+    padding-top: 100px;
+
+    .contact-main {
+      display: flex;
+      align-items: center;
+
+      .contact-icon {
+
+      }
+
+      .contact-text {
+      }
+    }
+
+    .contact-form {
+      display: flex;
+    }
+  }
+}
+
